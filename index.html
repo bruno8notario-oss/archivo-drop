@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:title" content="Archivo Drop | Sneakers de Alta Gama">
+    <meta property="og:description" content="Curaduría exclusiva de piezas de colección.">
+    <meta property="og:image" content="https://i.postimg.cc/2SfCZc1D/Whats-App-Image-2026-04-15-at-23-49-42.jpg">
+    <meta property="og:url" content="https://archivodrop.netlify.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/WhatsApp_Image_2026-04-12_at_15.12.32_tmjnbf" type="image/png">
+    <title>Archivo Drop | Catálogo de Sneakers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #ececec; color: #111827; }
+        .page-shell { background-color: #ececec; }
+        .sneaker-card { transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid #d1d5db; background-color: rgba(255,255,255,0.94); }
+        .sneaker-card:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08); }
+        .sneaker-badge { background-color: rgba(255,255,255,0.95); border: 1px solid #d1d5db; color: #1f2937; }
+        .footer-logo { filter: grayscale(100%) opacity(0.85); }
+        .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: auto; height: auto; border-radius: 50px; box-shadow: 0 16px 32px rgba(15, 23, 42, 0.18); background: #000000; border: 2px solid #ffffff; display: flex; align-items: center; justify-content: center; z-index: 50; padding: 12px 16px; gap: 10px; transition: all 0.3s ease; text-decoration: none; }
+        .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
+        .whatsapp-float img { width: 36px; height: 36px; object-fit: contain; }
+        .whatsapp-text { color: #ffffff; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-family: 'Inter', sans-serif; }
+        .product-image { overflow: hidden; transition: transform 0.3s ease; }
+        .product-image img { transition: transform 0.3s ease; }
+        .product-image:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <header class="py-12 text-center border-b border-gray-200 bg-[#f8f8f8]">
+        <h1 class="text-5xl font-extrabold tracking-tight uppercase">Archivo Drop</h1>
+        <p class="text-gray-500 text-[10px] mt-2 tracking-[0.3em] uppercase">Curaduría de Calzado de Alta Gama</p>
+    </header>
+
+    <section class="max-w-6xl mx-auto p-6 mt-8 bg-white border border-gray-200 rounded-3xl shadow-sm">
+        <p class="text-sm leading-7 text-gray-600"><span class="font-bold text-gray-900">PIEZAS ÚNICAS.</span> No realizamos reservas de palabra. La prioridad es de quien transfiere primero. Autenticidad garantizada</p>
+    </section>
+
+    <main class="max-w-6xl mx-auto p-6 mt-6">
+        <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            </div>
+    </main>
+
+    <footer class="bg-[#f8f8f8] border-t border-gray-200 py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-gray-600">
+            <div class="flex items-center gap-3">
+                <img src="https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/21d67f1d6b3be5bb2e39395311c77fc6_xln6wb" alt="Archivo Drop logo" class="w-14 h-14 rounded-full border border-gray-200 bg-white object-cover" />
+                <div class="text-left">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-900">Archivo Drop</p>
+                    <p class="text-xs text-gray-500">Curaduría de piezas únicas</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://www.instagram.com/archivodrop/" target="_blank" class="text-gray-600 hover:text-gray-900" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M7.75 2h8.5C19.097 2 21 3.903 21 6.25v11.5C21 18.097 19.097 20 16.25 20h-8.5C4.903 20 3 18.097 3 15.75V6.25C3 3.903 4.903 2 7.75 2zm0 1.5C6.231 3.5 5 4.731 5 6.25v11.5C5 18.769 6.231 20 7.75 20h8.5c1.519 0 2.75-1.231 2.75-2.75V6.25C19 4.731 17.769 3.5 16.25 3.5h-8.5zM12 7.25a4.75 4.75 0 1 1 0 9.5a4.75 4.75 0 0 1 0-9.5zm0 1.5a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5zm4.9-.75a1.15 1.15 0 1 1 0 2.3a1.15 1.15 0 0 1 0-2.3z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Comunidad activa y confianza total antes de transferir.</p>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-6 pt-6 border-t border-gray-200 text-center">
+            <p class="text-[9px] uppercase tracking-[0.25em] text-gray-400">Entre Rios Libertador san martin • Tel: +54 9 3434466669 • &copy; 2026 Archivo Drop</p>
+        </div>
+    </footer>
+
+    <a href="https://chat.whatsapp.com/KDSYVkIhd7r1etbiA4PTfA" target="_blank" class="whatsapp-float" aria-label="Sumarse al grupo de WhatsApp">
+        <img src="https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/whatsapp-pictures-wcobb4n1hcozoayi_rlkoym" alt="WhatsApp" />
+        <span class="whatsapp-text">Sumate al grupo</span>
+    </a>
+
+    <script>
+        // 1. CONFIGURACIÓN: Reemplaza con tu número (Código país + Código área + Número)
+        const WHATSAPP_NUMBER = "5493434466669"; 
+
+        // 2. BASE DE DATOS: Aquí gestionas tu stock
+        const products = [
+            {
+                id: 1,
+                name: "Adidas Samba",
+                colorway: "Classic OG Black",
+                price: "$95.000",
+                size: "10,5 US",
+                img: "https://i.postimg.cc/2SfCZc1D/Whats-App-Image-2026-04-15-at-23-49-42.jpg",
+                status: "VENDIDO"
+            },
+            {
+                id: 2,
+                name: "New Balance 740 ",
+                colorway: "C“Slate Grey”",
+                price: "$95.000",
+                size: "43eur 9.5us 27.5cm",
+                img: "https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/WhatsApp_Image_2026-04-15_at_23.45.14_te2tmb",
+                status: "SOLD OUT"
+            },
+            {
+                id: 3,
+                name: "Adidas Spezial Handball",
+                colorway: "Handball",
+                price: "$90.000",
+                size: "44eur 10us 28cm",
+                img: "https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/WhatsApp_Image_2026-04-15_at_22.57.08_hvkv53",
+                status: "Disponible"
+            },
+            {
+                id: 4,
+                name: "Birkenstock Arizona Vegan",
+                colorway: "Vegan",
+                price: "$90.000",
+                size: "38eur 7us 24cm",
+                img: "https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/WhatsApp_Image_2026-04-15_at_22.56.52_arnep6",
+                status: "VENDIDO"
+            },
+            {
+                id: 5,
+                name: "Puma Morphic Base",
+                colorway: "Base",
+                price: "$90.000",
+                size: "43eur 9.5us 27.5cm",
+                img: "https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/WhatsApp_Image_2026-04-15_at_22.56.06_vvb8k3",
+                status: "Disponible"
+            },
+            {
+                id: 6,
+                name: "Nike Dunk Low SE",
+                colorway: "Sail Dark Marina",
+                price: "$90.000",
+                size: "42.5eur 9us 27cm",
+                img: "https://res.cloudinary.com/dm8ukzvqi/image/upload/f_auto,q_auto/WhatsApp_Image_2026-04-07_at_22.42.58_emmogo",
+                status: "Disponible"
+            },
+            // Para agregar más, copia desde '{' hasta '},' y pégalo abajo
+        ];
+
+        // 3. LÓGICA: Generación automática de la web
+        function loadCatalog() {
+            const grid = document.getElementById('catalog-grid');
+            grid.innerHTML = ""; // Limpiamos por si acaso
+
+            products.forEach(item => {
+                // Creamos el mensaje personalizado para WhatsApp
+                const customMessage = `Hola Archivo Drop! Me interesa el modelo: ${item.name} (${item.colorway}) en Talle: ${item.size}. ¿Sigue disponible?`;
+                const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(customMessage)}`;
+
+                grid.innerHTML += `
+                    <div class="sneaker-card overflow-hidden rounded-2xl">
+                        <div class="relative product-image">
+                            <img src="${item.img}" alt="${item.name}" class="w-full h-80 object-cover">
+                            <span class="absolute top-4 left-4 sneaker-badge text-[9px] px-2 py-1 uppercase font-semibold tracking-[0.2em]">
+                                ${item.status}
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold italic uppercase text-gray-900">${item.name}</h2>
+                            <p class="text-gray-500 text-sm mb-4 font-medium">${item.colorway}</p>
+                            
+                            <div class="flex justify-between items-end border-t border-gray-50 pt-4 mb-6">
+                                <div class="flex flex-col">
+                                    <span class="text-[10px] text-gray-400 uppercase tracking-tighter">Talle disp.</span>
+                                    <span class="text-sm font-mono font-bold">${item.size}</span>
+                                </div>
+                                <div class="flex flex-col text-right">
+                                    <span class="text-[10px] text-gray-400 uppercase tracking-tighter">Precio</span>
+                                    <span class="text-xl font-black text-black">${item.price}</span>
+                                </div>
+                            </div>
+
+                            <a href="${waLink}" target="_blank" 
+                               class="block w-full bg-zinc-900 text-white text-center py-4 text-xs font-bold uppercase tracking-[0.2em] rounded-xl hover:bg-zinc-700 transition-colors">
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // Ejecutar al cargar la página
+        loadCatalog();
+    </script>
+</body>
+</html>
